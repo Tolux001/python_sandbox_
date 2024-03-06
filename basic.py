@@ -164,18 +164,29 @@
 
 
 
-def read_unique_numbers():
-    unique_numbers = []
-    while len(unique_numbers) < 20:
-        try:
-            number = int(input("What number do you desire (in Lucifer's voice): "))
-            if number not in unique_numbers:
-                unique_numbers.append(number)
-                print(number)
-        except ValueError:
-            print("Invalid input. Please enter a valid integer.")
-    return unique_numbers
+# def read_unique_numbers():
+#     unique_numbers = []
+#     while len(unique_numbers) < 20:
+#         try:
+#             number = int(input("What number do you desire (in Lucifer's voice): "))
+#             if number not in unique_numbers:
+#                 unique_numbers.append(number)
+#                 print(number)
+#         except ValueError:
+#             print("Invalid input. Please enter a valid integer.")
+#     return unique_numbers
 
-# Call the function
-unique_numbers_list = read_unique_numbers()
-print("Unique values entered: ", '\n \t', unique_numbers_list)
+# # Call the function
+# unique_numbers_list = read_unique_numbers()
+# print("Unique values entered: ", '\n \t', unique_numbers_list)
+
+number = input("what is the number you want to get it digit sum and product: ")
+digit_number_sum = 0
+digit_number_product = 1
+
+for value in number:
+    digits = int(value)
+
+    digit_number_sum += digits
+    digit_number_product *= digits
+print(digits, digit_number_sum, digit_number_product)
