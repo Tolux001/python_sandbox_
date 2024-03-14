@@ -135,3 +135,13 @@
 # for i in range (n):
 #     m = n - i
 #     print ('x' * m)
+
+
+# exe 12.2
+artsShelf = ["Literature", "English", "Art"]
+scienceShelf = ["Physics", "Mathematics", "Chemistry", "Biology"]
+
+print(f"Number of books in Arts shelf is {len(artsShelf)}")
+print(f"Number of books in Science shelf is {len(scienceShelf)}")
+print(f"Number of books in Arts and Science shelves is {len(artsShelf) + len(scienceShelf)}")
+
