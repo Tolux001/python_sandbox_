@@ -40,3 +40,28 @@ print(fruits)
 
 fruits[0] = "BlueBerry"
 print(fruits)
+
+churches = ['C&S', 'CCC', 'RCCG', 'MFM', 'WC', 'CL']
+
+first_church = churches[0]
+print(first_church)
+
+churches.remove('RCCG')
+
+churches.append('RCCG')
+
+# Removing it by it Position
+last_list = len(churches) - 1
+
+index_list = 4
+
+churches.remove(churches[last_list])
+churches.remove(churches[index_list])
+# ------------- OR -----------------
+
+churches.pop(3)
+print(churches)
+
+# List Add : insert && append
+# List Remove : remove && pop
+

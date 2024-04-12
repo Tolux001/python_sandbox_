@@ -22,6 +22,9 @@ VARIABLE RULES:
 # # multiply assignment
 # x, y, dog_name, is_cool = (1, 2.5, "Pulpy", True)
 
+# x, y, name, is_available = (1,2, 'Tolu', True)
+
+# print(name)
 # print("Hello world!")
 
 # # basic math
@@ -48,7 +51,10 @@ VARIABLE RULES:
 
 # a = str(a)
 # a = float(a)
-
+a = 10
+b = '11'
+z = str(a) + b
+print(z)
 # print(type(a))
 
 # Concatenation
