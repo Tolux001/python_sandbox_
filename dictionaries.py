@@ -19,6 +19,7 @@ first_college = university_colleges["colphys"]
 print(first_college)
 print("I am going with", university_colleges['Senate_building'], "to the ceremonial building at ", university_colleges["colaminin"])
 
+university_colleges['colphys'] = 33
 
 university_colleges['phone_number'] = '2349038358375'
 print(university_colleges)
@@ -52,4 +53,28 @@ dict_list = [
 
 first_dict_name = dict_list[0]['name']
 print(first_dict_name)
+
+
+testing = {
+    'test': 20,
+    'test1': 30,
+    'test2': 50,
+    'test3': 70,
+}
+
+print1 = testing['test']
+print(print1)
+
+testing['test'] = 100
+
+values = testing.keys()
+print(values, '\n')
+
+
+# for value in values:
+#     print(f' The vision of those boys are to get {value} in each stages')
+
+# Removing properties
+# del(dict_name[key])
+# dict_name.pop(key)
 
