@@ -370,14 +370,3 @@
 # pg 96
 # ^[a-zA-Z]+
 
-import re
-def JTOi(name):
-    with open(name,"r") as file:
-        data = file.read()
-        # for line in file:
-        x = re.template("J", data)
-
-    return x
-user = "text.txt"    
-print(JTOi(user))
-
