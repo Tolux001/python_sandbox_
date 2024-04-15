@@ -1,0 +1,1 @@
+Hello this is the file I created through the use of 'FILE' This additional text was written using mode 'a'
