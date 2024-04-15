@@ -5,11 +5,22 @@ import re
 
 def validate_email(email):
     if len(email) > 14:
-        return bool(re.match("^.+@(\[?)[a-zA-Z0-9-.]+.([a-zA-Z]{2,3}|[0-9]{1,3})(]?)$", email))
+        return bool(re.match("^.+@(\\[?)[a-zA-Z0-9-.]+.([a-zA-Z]{2,3}|[0-9]{1,3})(]?)$", email))
 
-def nameValidator(name1, name2):
-    if name1 == name2:
-        answer = 'Matching Names'
+
+
+
+
+def dataTypeValidator(name1):
+    if type(name1) == int:
+        answer = f'{name1} is the correct data type'
     else:
-        answer = 'Seriously Bro, just write the same name that all: Check typo or casing'
+        answer = 'Wrong data type'
     return answer
+
+def matching_number(num1, num2):
+    if num1 == num2:
+        result = f'{num1} is a perfect match with {num2}' 
+    else:
+        result = f'{num1} is not a perfect match with {num2}'
+    return result

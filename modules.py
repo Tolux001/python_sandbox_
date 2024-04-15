@@ -29,19 +29,18 @@ c = CamelCase()
 answer = c.hump("hello world")
 print(answer)
 
-# #Import custom: Importing a file that you have 
-# import validator
-# from validator import validate_email
-# from validator import nameValidator
+#Custom Modules: Importing a python file you have already
 
-# # Email_validator
-# email = 'tolux001@yahoo.com'
-# if validate_email(email):
-#     print("Email is valid")
-# else:
-#     print("Email is bad")
+from validator import dataTypeValidator
+from validator import matching_number
 
-# # Name_validator
-# name1 = "Tolux001"
-# name2 = "Tolux001"
-# print(nameValidator(name1, name2))
+#number function in validator.py
+num1 = float(input('Value of first number: '))
+num2 = float(input('Value of second number: '))
+
+print(matching_number(num1, num2))
+
+#name function in validator.py
+name = int(input('Int or Float; Let see if you get it right: '))
+
+print(dataTypeValidator(name))
