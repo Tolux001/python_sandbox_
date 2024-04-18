@@ -39,5 +39,9 @@ Update mode '+'
 
 .write()
 
+.read()
+
+.readlines()[-The line number]
+
 .close()
 '''
